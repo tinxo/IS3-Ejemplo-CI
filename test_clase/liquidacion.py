@@ -10,6 +10,7 @@ class Liquidacion(object):
     def calcularSueldoBasico(self, hsTrabajadas):
         # Basico = horas trabajadas * valor hora
         basico = int(hsTrabajadas) * self.valorHora
+        basico = basico * 0.9 #error
         return basico
 
     def calcularSueldoBruto(self, basico, antiguedad):
