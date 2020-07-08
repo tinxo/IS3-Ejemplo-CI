@@ -2,7 +2,7 @@
 
 class Liquidacion(object):
     def __init__(self):
-        self.valorHora = 2500
+        self.valorHora = 250
         self.pctBonificacion = 8
         self.pctRetenciones = 11
         self.pctObraSocial = 3
