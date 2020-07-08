@@ -2,7 +2,7 @@
 
 class Liquidacion(object):
     def __init__(self):
-        self.valorHora = 250
+        self.valorHora = 2500
         self.pctBonificacion = 8
         self.pctRetenciones = 11
         self.pctObraSocial = 3
@@ -10,6 +10,7 @@ class Liquidacion(object):
     def calcularSueldoBasico(self, hsTrabajadas):
         # Basico = horas trabajadas * valor hora
         basico = int(hsTrabajadas) * self.valorHora
+        basico = basico * 0.9 #error
         return basico
 
     def calcularSueldoBruto(self, basico, antiguedad):
